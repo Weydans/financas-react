@@ -5,14 +5,17 @@ import '../template/dependencies';
 
 import Header  from '../template/components/Header';
 import Sidebar from '../template/components/Sidebar';
+import Menu    from '../components/Menu';
 import Main    from '../template/components/Main';
 import Footer  from '../template/components/Footer';
 import Routes  from './Routes';
 
 export default props => (
 	<Router>
-		<Header name="MY" surname="Money" icon="money"/>
-		<Sidebar />
+		<Header name="Finanças" surname="React" icon="piggy-bank"/>
+		<Sidebar>
+			<Menu />
+		</Sidebar>
 		<Main>			
 			<Routes />			
 		</Main>			
