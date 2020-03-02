@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Menu     from '../template/components/Menu';
-import MenuItem from '../template/components/MenuItem';
-import MenuTree from '../template/components/MenuTree';
+import Menu     from '../../template/components/Menu';
+import MenuItem from '../../template/components/MenuItem';
+import MenuTree from '../../template/components/MenuTree';
 
 export default props => (
     <Menu>

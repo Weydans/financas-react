@@ -5,7 +5,7 @@ import '../template/dependencies';
 
 import Header  from '../template/components/Header';
 import Sidebar from '../template/components/Sidebar';
-import Menu    from '../components/Menu';
+import Menu    from '../components/menu/Menu';
 import Main    from '../template/components/Main';
 import Footer  from '../template/components/Footer';
 import Routes  from './Routes';

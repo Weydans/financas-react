@@ -1,9 +1,10 @@
 import React from 'react';
 
-import Page      from '../template/components/Page';
-import Box       from '../template/components/Box';
-import BoxHeader from '../template/components/BoxHeader';
-import BoxBody   from '../template/components/BoxBody';
+import Page      from '../../template/components/Page';
+import Grid      from '../../layout/Grid';
+import Box       from '../../template/components/Box';
+import BoxHeader from '../../template/components/BoxHeader';
+import BoxBody   from '../../template/components/BoxBody';
 
 export default props => {
     let rows = []
@@ -23,7 +24,7 @@ export default props => {
 
     return (
         <Page title="Receita">
-            <div className="col-md-12">
+            <Grid>
                 <Box>
                     <BoxHeader title="Listagem" icon="list"/>
                     <BoxBody>
@@ -48,7 +49,7 @@ export default props => {
                         </div>
                     </BoxBody>
                 </Box>
-            </div>
+            </Grid>
         </Page>
     );
 }
