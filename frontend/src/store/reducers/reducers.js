@@ -1,9 +1,11 @@
 import { combineReducers } from 'redux';
 
-import DasboardReducer from './dashboardReducer';
+import dasboardReducer from './dashboardReducer';
+import receitaReducer from './receitaReducers';
 
 const reducers = combineReducers({
-    dashboard: DasboardReducer
+    dashboard: dasboardReducer,
+    receitas: receitaReducer
 });
 
 export default reducers;

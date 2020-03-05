@@ -1,11 +1,11 @@
 import axios from 'axios';
 
-const BASE_URL = 'minha-api';
+const BASE_URL = 'http://localhost/financas-react/backend/public/api';
 
-export function getSummary() {
-    const request = axios.get(`${BASE_URL}/billingCicles/summary`);
+export async function getSummary() {
+    const request = await axios.get(`${BASE_URL}/billingCicles/summary`);    
     return {
-        type: '',
-        payload: request
+        type: 'BILLING_SUMMARY_FETCHED',
+        payload: request.data
     };
 }

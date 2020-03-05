@@ -13,6 +13,12 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:api')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
+
+Route::get('billingCicles/summary', 'Api\MovimentacaoController@getSummary')->name('summary');
+Route::get('income', 'Api\MovimentacaoController@income')->name('income');
+Route::get('income/{id}', 'Api\MovimentacaoController@detail')->name('detail');
+
+
